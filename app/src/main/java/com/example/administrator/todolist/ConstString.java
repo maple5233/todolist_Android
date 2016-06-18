@@ -1,4 +1,4 @@
-package com.maple;
+package com.example.administrator.todolist;
 
 public class ConstString {
 
