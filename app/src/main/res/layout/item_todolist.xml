@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#2ea7af"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/id_todoListTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/my_material_dark"
+        android:padding="5dp"
+        android:textColor="@color/my_secondary_text_default_material_dark"
+        android:layout_margin="5dp" />
+</FrameLayout>

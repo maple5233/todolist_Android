@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:background="@color/accent_material_dark"
+    android:weightSum="1"
+    android:padding="@dimen/abc_action_bar_content_inset_material">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎使用"
+        android:id="@+id/title"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.03"
+        android:textSize="50dp"
+        android:textColor="@color/abc_background_cache_hint_selector_material_dark" />
+
+    <EditText
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/userName"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:hint="用户名" />
+
+    <EditText
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/userPass"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.03"
+        android:hint="密码" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:id="@+id/button_login"
+        android:layout_marginTop="10dp"
+        android:radius="15dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/my_material_light" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:radius="15dp"
+        android:id="@+id/button_register"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/my_material_light" />
+
+</LinearLayout>

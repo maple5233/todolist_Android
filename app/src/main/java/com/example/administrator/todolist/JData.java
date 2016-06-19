@@ -37,6 +37,7 @@ public abstract class JData {
         Iterator<Entry<String, Integer>> intPairs = this.mapInt.entrySet().iterator();
         Iterator<Entry<String, String>> StringPairs = this.mapString.entrySet().iterator();
         StringBuffer response = new StringBuffer();
+        response.append("MSG:"+this.msg+"\n");
         for (int i = 0; i < this.mapInt.size(); i++) {
             Entry<String, Integer> entry = intPairs.next();
             response.append(entry.getKey());
