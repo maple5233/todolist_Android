@@ -82,7 +82,10 @@ public class MainActivity extends AppCompatActivity
             fragmentTransaction.replace(R.id.fragment_emtry, fragment);
             fragmentTransaction.commit();
         } else if (id == R.id.nav_add_todolist) {
-
+            Fragment_todoListCreater fragment = new Fragment_todoListCreater();
+            android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_emtry, fragment);
+            fragmentTransaction.commit();
         } else if (id == R.id.nav_login_register) {
             Fragment_LoginAndRegister fragment =new Fragment_LoginAndRegister();
             android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();

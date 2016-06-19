@@ -2,12 +2,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.administrator.todolist.Fragment_todoListCreater">
+    tools:context="com.example.administrator.todolist.Fragment_todoListCreater"
+    android:padding="@dimen/abc_action_bar_content_inset_material">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="创建备忘录"
+        android:textSize="45dp"
+        android:id="@+id/text_createTodoList"
+        android:layout_gravity="center_horizontal|top"
+        android:textColor="@color/abc_primary_text_disable_only_material_light" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:id="@+id/editText"
+        android:layout_marginTop="100dp"
+        android:hint="标题"
+        android:textSize="23dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/todoListContent"
+        android:background="@drawable/textview_border"
+        android:layout_marginTop="160dp" />
+
 
 </FrameLayout>
